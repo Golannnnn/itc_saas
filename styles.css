@@ -577,10 +577,30 @@ hr {
   border-color: #f7685b;
 }
 
-.tasks-graph > img {
-  width: 95%;
-  height: 95%;
-  object-fit: contain;
+.tasks-graph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #2ed47a;
+  padding: 3.5em;
+  border-radius: 50%;
+  background: radial-gradient(white 65%, transparent 41%),
+    conic-gradient(
+      #2ed47a 0% 25%,
+      #ffb946 25% 55%,
+      #f7685b 55% 65%,
+      #2ed47a 65% 100%
+    );
+}
+
+.tasks-graph-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tasks-graph-text {
+  font-size: 2.5rem;
 }
 
 @media (min-width: 400px) {
@@ -675,6 +695,18 @@ hr {
   .nav {
     display: none;
   }
+
+  .tasks-ellipses {
+    margin-left: 25px;
+  }
+
+  .tasks-graph {
+    padding: 2em;
+  }
+
+  .tasks-graph-text {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 700px) {
@@ -703,5 +735,13 @@ hr {
 
   .nav {
     display: flex;
+  }
+
+  .tasks-graph {
+    padding: 3.5em;
+  }
+
+  .tasks-graph-text {
+    font-size: 2.5rem;
   }
 }

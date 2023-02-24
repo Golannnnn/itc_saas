@@ -304,10 +304,6 @@ hr {
   text-align: center;
 }
 
-/* .calender-day.monday > p {
-  color: var(--main-blue);
-} */
-
 .overview-cards-container {
   flex: 1;
   display: flex;

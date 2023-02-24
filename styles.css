@@ -67,7 +67,8 @@ body {
 }
 
 hr {
-  border: 0.5px solid var(--line-color);
+  border-top: none;
+  border-bottom: 0.5px solid var(--line-color);
 }
 
 .nav {

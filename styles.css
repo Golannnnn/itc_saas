@@ -160,6 +160,14 @@ hr {
   fill: var(--main-blue);
 }
 
+.active > p {
+  color: var(--main-blue);
+}
+
+.active > svg {
+  stroke: var(--main-blue) !important;
+}
+
 .nav-tab {
   display: flex;
   align-items: center;
